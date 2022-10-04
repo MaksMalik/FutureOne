@@ -1,0 +1,43 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  max-width: 1800px;
+  margin: auto !important;
+  float: none !important;
+}
+
+.section::-webkit-scrollbar {
+  width: 16px;
+}
+
+.section::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.section::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #29CC6A #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #29CC6A;
+  border-radius: 0px;
+  border: 3px none #ffffff;
+}

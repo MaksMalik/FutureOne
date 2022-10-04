@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function StartPage() {
+export default function MoreInfo() {
   return (
-    <div>StartPage</div>
+    <div>MoreInfo</div>
   )
 }

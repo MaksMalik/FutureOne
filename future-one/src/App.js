@@ -1,4 +1,5 @@
 import './App.css';
+import "./reset.css";
 import Header from './Components/Header/Header';
 import StartPage from './Components/StartPage/StartPage';
 import DropDown from './Components/DropDown/DropDown';

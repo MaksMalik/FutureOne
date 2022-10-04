@@ -1,0 +1,141 @@
+.StartPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 80px 200px 0 200px;
+}
+
+.StartPage__left {
+  margin: 0 60px 0 0;
+}
+
+.StartPate__left__title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 64px;
+}
+
+.StartPage__left__title__green {
+  color: #29CC6A;
+}
+
+.StartPage__left__title__black {
+  color: black;
+}
+
+.StartPage__left__subtitle {
+  margin: 20px 0 20px 0;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.StartPage__left__button {
+  width: 40%;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  background-color: #29CC6A;
+  padding: 10px 50px 10px 50px;
+  transition-duration: 500ms;
+  cursor: pointer;
+  border: #29CC6A solid 1px;
+  text-align: center;
+}
+
+.StartPage__left__button:hover {
+  font-weight: bold;
+  color: #29CC6A;
+  background-color: white;
+}
+
+.StartPage__right {
+  width: 60%;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 1450px) {
+  .StartPage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 80px 150px 0 150px;
+  }
+
+
+  .StartPage__left__subtitle {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .StartPage__right {
+    width: 60%;
+    height: auto;
+  }
+
+  .StartPage__left {
+    margin: 0;
+  }
+
+  .StartPate__left__title {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+  }
+
+  .StartPage__left__button {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1165px) {
+  .StartPage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 80px 100px 0 100px;
+  }
+
+
+  .StartPate__left__title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .StartPage {
+    flex-direction: column-reverse;
+
+  }
+
+  .StartPage__left {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .StartPage__right {
+    width: 100%;
+    height: auto;
+  }
+
+  .StartPage {
+    margin: 80px 50px 0 50px;
+  }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+  .StartPage {
+
+    margin: 80px 20px 0 20px;
+  }
+
+
+}
