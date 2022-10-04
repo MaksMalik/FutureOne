@@ -31,6 +31,7 @@
 .DropDown__drop__element__left__number {
   font-size: 16px;
   line-height: 24px;
+  color: rgb(167, 167, 167);
 }
 
 .DropDown__drop__element__left__title {
@@ -45,6 +46,7 @@
   font-size: 16px;
   line-height: 24px;
   padding: 0 0 20px 0;
+  color: rgb(95, 95, 95);
 }
 
 .notVisible {
@@ -55,7 +57,7 @@
 
 .DropDown__drop__element__right__minus {
   width: 43px;
-  border: #29CC6A 5px solid;
+  border: #29CC6A 3px solid;
   height: 43px;
   border-radius: 50%;
   cursor: pointer;
@@ -114,5 +116,17 @@
 @media only screen and (max-width: 800px) {
   .DropDown {
     margin: 80px 20px 0 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .DropDown__drop__element__right__minus::before {
+    font-size: 30px;
+  }
+
+  .DropDown__drop__element__right__minus{
+    width: 30px;
+    height: 30px;
+    border: 3px solid #29CC6A;
   }
 }

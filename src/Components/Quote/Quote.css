@@ -133,5 +133,32 @@
   .Quote__right::after {
     left: -70px;
   }
+}
 
+
+@media only screen and (max-width: 425px) {
+  .Quote__right__quote {
+    font-size: 12px;
+    margin: 0 50px 0 0;
+  }
+
+  .Quote__right::after {
+    top: -113px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Quote {
+    flex-direction: column;
+
+  }
+
+  .Quote__right__quote {
+    margin: 0 0px 0 0;
+  }
+
+  .Quote__right::after {
+    top: -98px;
+    left: -17px
+  }
 }
