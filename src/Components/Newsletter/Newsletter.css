@@ -1,4 +1,17 @@
 .Newsletter {
   background-color: #29CC6A;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0 0 0;
+}
+
+.Newsletter__title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 36px;
+  color: white;
+
 }
