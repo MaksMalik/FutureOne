@@ -1,4 +1,161 @@
 .Footer {
   padding: 50px 0 50px 0;
   background-color: #2B2D26;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  line-height: 24px;
+  padding: 80px 200px 20px 200px;
+
+}
+
+.Footer__links {
+  display: flex;
+}
+
+
+.Footer__links__left__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.Footer__links__left__element {
+  font-size: 16px;
+  margin-right: 90px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.Footer__links__right__element {
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+
+.Footer__links__right__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.Footer__bottom {
+  border-top: #29CC6A solid 3px;
+  padding: 15px 0 0 0;
+  font-size: 14px;
+  margin: 50px 0 20px 0;
+  display: flex;
+}
+
+.Footer__bottom__copyright {
+  margin: 0 40px 0 0;
+}
+
+
+.Footer__bottom_links {
+  display: flex;
+}
+
+.Footer__bottom__link {
+  margin: 0 35px 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Footer__bottom__link:last-child {
+  margin: 0 0px 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Footer__icons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0 0 0;
+
+}
+
+.Footer__icons_element {
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-duration: 300ms;
+  opacity: 0.7;
+
+}
+
+.Footer__icons_element:nth-child(1) {
+  background-image: url("./images/Vector.svg");
+}
+
+.Footer__icons_element:nth-child(2) {
+  background-image: url("./images/Vector-1.svg");
+}
+
+.Footer__icons_element:nth-child(3) {
+  background-image: url("./images/Vector-2.svg");
+}
+
+.Footer__icons_element:nth-child(4) {
+  background-image: url("./images/Vector-3.svg");
+}
+
+.Footer__icons_element:nth-child(5) {
+  background-image: url("./images/Vector-4.svg");
+}
+
+
+@media only screen and (max-width: 1450px) {
+  .Footer {
+    padding: 80px 150px 0 150px;
+  }
+}
+
+.Footer__icons_element:hover {
+  opacity: 1;
+
+}
+
+
+@media only screen and (max-width: 1165px) {
+  .Footer {
+    padding: 80px 100px 0 100px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Footer {
+    padding: 80px 50px 0 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Footer__bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Footer__bottom__copyright {
+    margin: 20px 0px 0 0;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .Footer {
+    padding: 80px 20px 0 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Footer__bottom__link {
+    margin: 0 16px 0 0;
+  }
 }
