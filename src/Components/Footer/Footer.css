@@ -82,7 +82,7 @@
   height: 20px;
   width: 20px;
   cursor: pointer;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   transition-duration: 300ms;
   opacity: 0.7;
