@@ -24,7 +24,7 @@
 .DropDown__drop__element {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0 20px 0;
+  margin: 0px 0 20px 0;
   border-bottom: 1px solid black;
 }
 
@@ -55,44 +55,6 @@
   padding: 0;
 }
 
-.DropDown__drop__element__right__minus {
-  width: 43px;
-  border: #29CC6A 3px solid;
-  height: 43px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-
-}
-
-.DropDown__drop__element__right__minus::before {
-  content: "-";
-  font-size: 43px;
-  text-align: center;
-  width: 43px;
-  height: 43px;
-  color: #29CC6A;
-}
-
-.DropDown__drop__element__right__plus {
-  width: 43px;
-  border: #29CC6A 5px solid;
-  height: 43px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-
-}
-
-.DropDown__drop__element__right__plus::before {
-  content: "+";
-  font-size: 43px;
-  text-align: center;
-  width: 43px;
-  height: 43px;
-  color: #29CC6A;
-}
-
 
 @media only screen and (max-width: 1450px) {
   .DropDown {
@@ -119,14 +81,50 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .DropDown__drop__element__right__minus::before {
-    font-size: 30px;
-  }
 
-  .DropDown__drop__element__right__minus{
-    width: 30px;
-    height: 30px;
-    border: 3px solid #29CC6A;
-  }
+
+.DropDown__drop__element {
+  position: relative;
+}
+
+.div details {
+  width: 100%;
+}
+
+summary {
+  list-style: none;
+  width: 100%;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  cursor: pointer;
+  padding: 0 0;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+  padding: 20px 0 20px 0;
+}
+
+summary:before {
+  position: absolute;
+  content: "-";
+  color: #29CC6A;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  border: #29CC6A 3px solid;
+  border-radius: 50%;
+  right: 0;
+}
+
+details[open] summary:before {
+  content: "+";
 }
